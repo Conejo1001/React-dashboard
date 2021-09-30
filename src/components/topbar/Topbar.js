@@ -1,6 +1,6 @@
 import React from "react";
+import Avatar from "../../components/avatar/Avatar"
 import "./Topbar.css"
-import { NotificationsNone, Language, Settings } from "@material-ui/icons";
 
 function Topbar() {
   return (
@@ -10,18 +10,7 @@ function Topbar() {
           <span className="logo">Administrator</span>
         </div>
         <div className="topRight">
-          <div className="topbarIconContainer">
-            <NotificationsNone />
-            <span className="topIconBadge">2</span>
-          </div>
-          <div className="topbarIconContainer">
-            <Language />
-            <span className="topIconBadge">2</span>
-          </div>
-          <div className="topbarIconContainer">
-            <Settings />
-          </div>
-          <img src="https://images.pexels.com/photos/1526814/pexels-photo-1526814.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="" className="topAvatar" />
+          <Avatar />
         </div>
       </div>
     </div>
